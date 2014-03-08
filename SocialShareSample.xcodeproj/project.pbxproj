@@ -19,6 +19,8 @@
 		EA63B07918CB85290027AB4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA63B06118CB85290027AB4E /* UIKit.framework */; };
 		EA63B08118CB85290027AB4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA63B07F18CB85290027AB4E /* InfoPlist.strings */; };
 		EA63B08318CB85290027AB4E /* SocialShareSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA63B08218CB85290027AB4E /* SocialShareSampleTests.m */; };
+		EA63B08F18CB85FD0027AB4E /* CDYSocialShare.m in Sources */ = {isa = PBXBuildFile; fileRef = EA63B08E18CB85FD0027AB4E /* CDYSocialShare.m */; };
+		EA63B09418CB89130027AB4E /* CDYSocialMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA63B09318CB89130027AB4E /* CDYSocialMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,11 @@
 		EA63B07E18CB85290027AB4E /* SocialShareSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SocialShareSampleTests-Info.plist"; sourceTree = "<group>"; };
 		EA63B08018CB85290027AB4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA63B08218CB85290027AB4E /* SocialShareSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialShareSampleTests.m; sourceTree = "<group>"; };
+		EA63B08D18CB85FD0027AB4E /* CDYSocialShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDYSocialShare.h; sourceTree = "<group>"; };
+		EA63B08E18CB85FD0027AB4E /* CDYSocialShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDYSocialShare.m; sourceTree = "<group>"; };
+		EA63B09018CB862A0027AB4E /* CDYSocial.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CDYSocial.podspec; sourceTree = "<group>"; };
+		EA63B09218CB89130027AB4E /* CDYSocialMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDYSocialMessage.h; sourceTree = "<group>"; };
+		EA63B09318CB89130027AB4E /* CDYSocialMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDYSocialMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +84,8 @@
 		EA63B05118CB85290027AB4E = {
 			isa = PBXGroup;
 			children = (
+				EA63B09018CB862A0027AB4E /* CDYSocial.podspec */,
+				EA63B08C18CB85ED0027AB4E /* Core */,
 				EA63B06318CB85290027AB4E /* SocialShareSample */,
 				EA63B07C18CB85290027AB4E /* SocialShareSampleTests */,
 				EA63B05C18CB85290027AB4E /* Frameworks */,
@@ -142,6 +151,17 @@
 				EA63B07F18CB85290027AB4E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA63B08C18CB85ED0027AB4E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EA63B09218CB89130027AB4E /* CDYSocialMessage.h */,
+				EA63B09318CB89130027AB4E /* CDYSocialMessage.m */,
+				EA63B08D18CB85FD0027AB4E /* CDYSocialShare.h */,
+				EA63B08E18CB85FD0027AB4E /* CDYSocialShare.m */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA63B06E18CB85290027AB4E /* AppDelegate.m in Sources */,
+				EA63B09418CB89130027AB4E /* CDYSocialMessage.m in Sources */,
 				EA63B06A18CB85290027AB4E /* main.m in Sources */,
+				EA63B08F18CB85FD0027AB4E /* CDYSocialShare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +459,7 @@
 				EA63B08818CB85290027AB4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA63B08918CB85290027AB4E /* Build configuration list for PBXNativeTarget "SocialShareSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +468,7 @@
 				EA63B08B18CB85290027AB4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
