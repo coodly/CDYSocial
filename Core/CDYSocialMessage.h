@@ -18,4 +18,8 @@
 
 @interface CDYSocialMessage : NSObject
 
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, strong) NSURL *url;
+@property (nonatomic, strong) UIImage *image;
+
 @end

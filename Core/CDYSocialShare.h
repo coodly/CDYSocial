@@ -16,6 +16,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class CDYSocialMessage;
+
 @interface CDYSocialShare : NSObject
+
++ (CDYSocialShare *)sharedInstance;
+
+- (void)shareToFacebook:(CDYSocialMessage *)message onController:(UIViewController *)controller;
+- (void)shareToTwitter:(CDYSocialMessage *)message onController:(UIViewController *)controller;
 
 @end
